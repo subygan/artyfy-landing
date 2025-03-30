@@ -1,4 +1,5 @@
 import React from 'react';
+import landingImage from '../assets/images/landing.png';
 
 const Features = () => {
   const features = [
@@ -38,6 +39,16 @@ const Features = () => {
   return (
     <section id="features" className="section bg-white">
       <div className="container">
+        {/* Landing image in horizontal container */}
+        <div className="w-full mb-16 overflow-hidden rounded-lg shadow-lg">
+          <img 
+            src={landingImage} 
+            alt="Artyfy App Interface" 
+            className="w-full h-auto object-cover"
+            style={{ maxHeight: '500px' }}
+          />
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold">AI-Powered Creative Studio</h2>
           <p className="text-lg mt-4 max-w-2xl mx-auto">
