@@ -15,16 +15,6 @@ const Features = () => {
     {
       icon: (
         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-          <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
-          <line x1="4" y1="22" x2="4" y2="15"></line>
-        </svg>
-      ),
-      title: 'Batch Processing & Async',
-      description: 'Apply your custom filters to multiple images at once. Our powerful backend processes everything asynchronously so you can continue creating while we handle the heavy lifting.',
-    },
-    {
-      icon: (
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
           <circle cx="9" cy="7" r="4"></circle>
           <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
@@ -56,13 +46,13 @@ const Features = () => {
           </p>
         </div>
 
-        <div className="flex flex-row justify-center max-w-6xl mx-auto" style={{display: 'flex', flexDirection: 'row'}}>
+        <div className="flex flex-wrap justify-center max-w-6xl mx-auto">
           {features.map((feature, index) => (
             <div 
               key={index} 
-              className="card hover:transform mx-2"
+              className="card hover:transform mx-2 mb-6"
               style={{
-                flex: '1 1 0',
+                flex: '1 1 300px',
                 minWidth: '250px',
                 maxWidth: '350px'
               }}
