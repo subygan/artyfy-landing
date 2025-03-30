@@ -1,0 +1,6 @@
+name = "artyfy-landing"
+compatibility_date = "2025-03-30"
+
+# Configure static site deployment
+[assets]
+directory = "./build"
